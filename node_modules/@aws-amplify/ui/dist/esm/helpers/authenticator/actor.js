@@ -1,1 +1,0 @@
-var t=function(t){var n;return null===(n=t.context.actorRef)||void 0===n?void 0:n.getSnapshot()},n=function(n){var o;return null===(o=t(n))||void 0===o?void 0:o.context};export{n as getActorContext,t as getActorState};
