@@ -1,0 +1,1 @@
+import{isFunction as r}from"./utils.js";const o=r=>r.reduce(((r,o)=>a=>o(r(a))),(r=>r)),a=t=>{const{and:n,or:e,field:s,operator:i,operand:c}=t;if(Array.isArray(n)){const r=n.map((r=>a(r)));return a=>a.and(o(r))}if(Array.isArray(e)){const r=e.map((r=>a(r)));return a=>a.or(o(r))}return o=>r(o[s])?o[s].call(o,i,c):o};export{a as createDataStorePredicate};

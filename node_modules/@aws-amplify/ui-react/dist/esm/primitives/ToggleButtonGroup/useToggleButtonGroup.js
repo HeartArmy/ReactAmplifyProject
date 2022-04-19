@@ -1,0 +1,1 @@
+import*as r from"react";import{isFunction as t}from"../shared/utils.js";const e=(e,s,l=!1,a=!1)=>{const n=r.useCallback((r=>{if(!t(e)||!Array.isArray(s))return;const l=s.indexOf(r);let n;l>=0?(n=[...s],(!a||n.length>1)&&n.splice(l,1)):n=[...s,r],e(n)}),[e,s,a]),o=r.useCallback((r=>{t(e)&&e(s!==r||a?r:null)}),[e,s,a]);return l?o:n};export{e as useToggleButtonGroup};

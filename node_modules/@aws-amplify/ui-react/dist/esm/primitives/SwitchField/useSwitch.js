@@ -1,0 +1,1 @@
+import{useState as e,useCallback as t}from"react";const c=c=>{const{onChange:n,isChecked:o,defaultChecked:s,isDisabled:d}=c,r=void 0!==o,[a,i]=e(r?o:s),[u,f]=e(!1),h=t((e=>{d?e.preventDefault():("function"==typeof n&&n(e),i(e.target.checked))}),[n,d]);return r&&a!==o&&i(o),{isOn:a,changeHandler:h,isFocused:u,setIsFocused:f}};export{c as useSwitch};

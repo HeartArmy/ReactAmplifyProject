@@ -1,0 +1,1 @@
+import{useState as t}from"react";import{isFunction as e}from"../shared/utils.js";const o=(o,r)=>{const[a,c]=t(o),[s,n]=t(!1);return{dataChecked:a,dataFocus:s,onBlur:()=>{n(!1)},onChange:t=>{c(t.target.checked),e(r)&&r(t)},onFocus:()=>{n(!0)},setDataChecked:c}};export{o as useCheckbox};
